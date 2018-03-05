@@ -1,0 +1,21 @@
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    <button class="delete" title="delete hero"
+    (click)="delete(hero)">x</button>
+  </li>
+</ul>
+
+
+<form name="form" (ngSubmit)="f.form.valid && addHero()" #f="ngForm" novalidate>
+  <table class="table">
+    <tbody>
+      <tr>
+        <td><button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Add Hero</button></td>
+        <td><input placeholder="Add Hero Name" type="text" class="form-control" name="name" id="name" [(ngModel)]="hero.name" #fullName="ngModel" required /></td>
+      </tr>
+    </tbody>
+  </table>
+</form>

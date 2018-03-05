@@ -1,0 +1,5 @@
+[Info  - 8:19:57 PM] Linter is running.
+[Info  - 8:19:58 PM] TSLint library loaded from: /home/dev/devDirectory/angularGuide/tourOfHeroes/node_modules/tslint/lib/index.js
+Warning: The 'deprecation' rule requires type information.
+Warning: The 'no-use-before-declare' rule requires type information.
+[Info  - 8:20:04 PM] vscode-tslint: Status is OK
